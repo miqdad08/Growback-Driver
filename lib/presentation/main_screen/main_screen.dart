@@ -50,10 +50,14 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: body(),
+      // Define a BottomNavigationBar for navigation options.
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: AppColor.bg_status,
+        // Specify the type of the BottomNavigationBar (fixed for fixed number of items).
         type: BottomNavigationBarType.fixed,
+        // Define the color of unselected items.
         unselectedItemColor: Colors.white,
+        // Create a list of BottomNavigationBarItem widgets for each navigation item.
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
